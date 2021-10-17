@@ -1,5 +1,5 @@
 # cinemaAngular AgeevDmitryMinsk
-работа с The Movie Database API Angular
+The Movie Database API with Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
