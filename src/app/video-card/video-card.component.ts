@@ -10,13 +10,14 @@ export class VideoCardComponent implements OnInit {
 
   @Input() movie: any;
 
-  baseUrl = "https://image.tmdb.org/t/p/original/"
+   baseUrl = "https://image.tmdb.org/t/p/original/"
 
   constructor() { }
 
 
   ngOnInit(): void {
-    console.log(this.movie);
+    console.log(this.movie.title !== undefined ? this.movie.title: this.movie.name);
+    //console.log(this.baseUrl);
   }
 
 }

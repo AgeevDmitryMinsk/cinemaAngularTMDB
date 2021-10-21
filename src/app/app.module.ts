@@ -40,7 +40,7 @@ import { FooterComponent } from './footer/footer.component';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    
+
 
   ],
   providers: [],

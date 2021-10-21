@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'nghulu';
+  title = 'AgeevDmitryMinsk';
 
+
+  // ngOnInit(): void {
+  //   console.log(this.title);
+  // }
 }
