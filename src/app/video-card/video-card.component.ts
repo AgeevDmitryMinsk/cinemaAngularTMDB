@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HostListener } from "@angular/core";
 
 @Component({
   selector: 'app-video-card',
@@ -7,6 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class VideoCardComponent implements OnInit {
 
+  //
+  @HostListener('document:click', ['$event.target'])
+
+  doSearch (element: any) {
+    if(element.classList.contains('videoCard') ) {
+      console.log('вы выбрали фильм:', element.querySelector('h2')!.textContent )
+    }
+  }
 
   @Input() movie: any;
 
@@ -21,3 +30,5 @@ export class VideoCardComponent implements OnInit {
   }
 
 }
+
+
