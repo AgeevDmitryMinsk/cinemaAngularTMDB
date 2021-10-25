@@ -8,13 +8,9 @@ import { HostListener } from "@angular/core";
 })
 export class VideoCardComponent implements OnInit {
 
-  //
-  @HostListener('document:click', ['$event.target'])
-
-  doSearch (element: any) {
-    if(element.classList.contains('videoCard') ) {
-      console.log('вы выбрали фильм:', element.querySelector('h2')!.textContent )
-    }
+  public movieSelect(message: any){
+    // console.log(message);
+    alert(`Вы выбрали фильм: ${message}`);
   }
 
   @Input() movie: any;
@@ -25,8 +21,6 @@ export class VideoCardComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log(this.movie.title !== undefined ? this.movie.title: this.movie.name);
-    //console.log(this.baseUrl);
   }
 
 }
